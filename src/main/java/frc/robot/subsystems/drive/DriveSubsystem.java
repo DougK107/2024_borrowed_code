@@ -36,7 +36,7 @@ public class DriveSubsystem extends SubsystemBase{
 
 
     public DriveSubsystem() {
-        gyroIO = new GyroIOPigeon2();
+        gyroIO = new GyroIONavX();
 
         fieldCentric = true;
 

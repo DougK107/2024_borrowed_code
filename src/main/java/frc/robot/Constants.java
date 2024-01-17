@@ -18,8 +18,8 @@ public class Constants {
     public static class Drive {
       public static final String CANBUS = "rio";
 
-      public static final double WIDTH = Units.inchesToMeters(20.75);
-      public static final double LENGTH = Units.inchesToMeters(20.75);
+      public static final double WIDTH = Units.inchesToMeters(20.75); //TODO: dk need update
+      public static final double LENGTH = Units.inchesToMeters(20.75); //TODO: dk need update
       public static final double DIAGONAL = Math.sqrt(WIDTH*WIDTH + LENGTH*LENGTH)/2;
 
       public static final SwerveDriveKinematics KINEMATICS = new SwerveDriveKinematics(
@@ -29,7 +29,7 @@ public class Constants {
         new Translation2d(-WIDTH/2, -LENGTH/2)
       );
 
-      public static final double WHEEL_RADIUS = Units.inchesToMeters(2);
+      public static final double WHEEL_RADIUS = Units.inchesToMeters(2);  //dk need to confirm
       
       public static final double MAX_VELOCITY = 4.23; // MPS
       public static final double MAX_ROTATION_VELOCITY = 10; // RadPS
@@ -51,7 +51,7 @@ public class Constants {
       private static final double kCoupleRatio = 3.5714285714285716;
 //       private static final double kCoupleRatio = 0;
 
-      public static final double kDriveGearRatio = 8.142857142857142;
+      public static final double kDriveGearRatio = 8.142857142857142;  //TODO: what are these for 107?
       public static final double kSteerGearRatio = 21.428571428571427;
       private static final double kWheelRadiusInches = 2;
 
@@ -61,7 +61,7 @@ public class Constants {
       private static final boolean kInvertRightSide = true;
 
       private static final String kCANbusName = "rio";
-      private static final int kPigeonId = 0;
+      //private static final int kPigeonId = 0;
 
       // These are only used for simulation
       private static final double kSteerInertia = 0.00001;
